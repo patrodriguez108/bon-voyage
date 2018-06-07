@@ -1,6 +1,6 @@
-class ArtWork < ActiveRecord::Migration[5.1]
+class ArtWorks < ActiveRecord::Migration[5.1]
   def change
-  	create_table	:art_work do |t|
+  	create_table	:art_works do |t|
   		t.string	:name
   		t.integer	:work_id
 

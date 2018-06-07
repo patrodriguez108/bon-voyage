@@ -12,21 +12,21 @@
 
 ActiveRecord::Schema.define(version: 20180607032122) do
 
-  create_table "art_work", force: :cascade do |t|
+  create_table "art_works", force: :cascade do |t|
     t.string "name"
     t.integer "work_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "web_work", force: :cascade do |t|
+  create_table "web_works", force: :cascade do |t|
     t.string "name"
     t.integer "work_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "work", force: :cascade do |t|
+  create_table "works", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

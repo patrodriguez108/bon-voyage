@@ -1,6 +1,6 @@
-class WebWork < ActiveRecord::Migration[5.1]
+class WebWorks < ActiveRecord::Migration[5.1]
   def change
-  	create_table :web_work do |t|
+  	create_table :web_works do |t|
   		t.string	:name
   		t.integer	:work_id
 
