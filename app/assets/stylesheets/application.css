@@ -14,12 +14,28 @@
  *= require_self
  */
 
+body {
+	background-color: #efeeea;
+}
+
+.nav-bar {
+	/*background-color: #c1e2ff;*/
+}
+
+.nav-bar nav {
+	align-content: center;
+	padding-bottom: 45px;
+}
+
 .nav-container {
 	display: flex;
+	padding-top: 65px;
+	padding-left: 200px;
+	padding-right: 300px;
 	list-style-type: none;
 	flex-flow: row wrap;
-	justify-content: space-around;
-	padding-top: 70px;
+	justify-content: space-between;
+	align-items: baseline;
 }
 
 .nav-container #logo {
@@ -31,14 +47,23 @@
 }
 
 .nav-container .nav-links li {
-	display: flex;
-	padding-left: 10px;
+	margin-left: 30px;
+	text-transform: uppercase;
 }
 
-.page-content {
-	display: flex;
-	padding-left: 150px;
-	padding-top: 40px;
+.nav-container .nav-links li a:link {
+	text-decoration: none;
+	color: #63819b;
+}
+
+.nav-container .nav-links li a:visited {
+	text-decoration: none;
+	color: #63819b;
+}
+
+.page-wrapper {
+	padding-left: 250px;
+	padding-top: 20px;
 }
 
 @media all and (max-width: 800px) {
