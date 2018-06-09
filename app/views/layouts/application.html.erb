@@ -9,6 +9,14 @@
   </head>
 
   <body>
+  	<div class="nav-bar">
+	  	<div id="logo">
+	      <%= link_to root_path do %>
+	        <%= image_tag("bv_weblogo.png", height: '35', width: '300') %>
+	      <% end %>
+	    </div>
+
+  	</div>
     <%= yield %>
   </body>
 </html>
