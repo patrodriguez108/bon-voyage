@@ -3,4 +3,4 @@ Bon Voyage is my own personal brand. It showcases my work, both in web developme
 * Ruby 2.4.1
 
 * Schema
-![BonVoyageSchema](schema_00.png)
+![BonVoyageSchema](schema_01.png)
