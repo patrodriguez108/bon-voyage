@@ -1,4 +1,4 @@
 class Work < ApplicationRecord
-	has_many :web_work
-	has_many :art_work
+	has_many :web_works
+	has_many :art_works
 end
