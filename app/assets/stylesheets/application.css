@@ -48,7 +48,6 @@ body {
 
 .nav-container .nav-links li {
 	margin-left: 30px;
-	text-transform: uppercase;
 }
 
 .nav-container .nav-links li a:link {
@@ -62,8 +61,18 @@ body {
 }
 
 .page-wrapper {
-	padding-left: 250px;
-	padding-top: 20px;
+}
+
+.works {
+	display: flex;
+	list-style-type: none;
+}
+
+.works li {
+	display: inline-block;
+	padding-left: 30px;
+	font-size: 40px;
+	text-align: center;
 }
 
 @media all and (max-width: 800px) {
