@@ -13,3 +13,44 @@
  *= require_tree .
  *= require_self
  */
+
+.nav-container {
+	display: flex;
+	list-style-type: none;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	padding-top: 70px;
+}
+
+.nav-container #logo {
+	display: flex;
+}
+
+.nav-container .nav-links {
+	display: flex;
+}
+
+.nav-container .nav-links li {
+	display: flex;
+	padding-left: 10px;
+}
+
+.page-content {
+	display: flex;
+	padding-left: 150px;
+	padding-top: 40px;
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .navigation {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
