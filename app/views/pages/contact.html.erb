@@ -1,1 +1,16 @@
-This page will have how to contact me
+
+<%= form_for :contact, url: '/contact', method: 'post' do |f| %>
+	<%= f.label 'I am contacting about:' %>
+	<%= f.collection_select :work_type, Work.order(:name), :id, :name %>
+
+	<%= f.label 'Name' %>
+	<%= f.text_field :name %>
+
+	<%= f.label 'E-Mail' %>
+	<%= f.text_field :email %>
+
+	<%= f.label 'Message' %>
+	<%= f.text_area :message %>
+
+	<%= f.submit "Send" %>
+<% end %>
