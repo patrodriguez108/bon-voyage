@@ -19,7 +19,6 @@ body {
 }
 
 .nav-bar {
-	/*background-color: #c1e2ff;*/
 }
 
 .nav-bar nav {
@@ -63,16 +62,23 @@ body {
 .page-wrapper {
 }
 
-.works {
-	display: flex;
-	list-style-type: none;
+.works-index {
+	margin-top: 40px;
+	text-align: center;
 }
 
-.works li {
-	display: inline-block;
-	padding-left: 30px;
+.works-index .works {
+	list-style-type: none;
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+  padding-right: 90px;
+}
+
+.works-index .works li {
 	font-size: 40px;
-	text-align: center;
+	display: inline-block;
+	margin-left: 50px;
 }
 
 @media all and (max-width: 800px) {
