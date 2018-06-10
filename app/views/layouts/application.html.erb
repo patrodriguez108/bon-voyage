@@ -6,9 +6,46 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <style>
+      a {
+        font-family: 'Alegreya Sans SC', sans-serif;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #63819b;
+      }
+
+      .page-wrapper {
+        font-family: 'Lato', sans-serif;
+      }
+    </style>
   </head>
 
   <body>
-    <%= yield %>
+
+    <div class="nav-bar">
+      <nav>
+        <ul class="nav-container">
+          <span id="logo">
+            <li>
+              <%= link_to root_path do %>
+                <%= image_tag("bv_weblogo.png", height: '47', width: '400') %>
+              <% end %>
+            </li>
+          </span>
+
+          <span class="nav-links">
+            <li><%= link_to "Work", works_path %></li>
+            <li><%= link_to "About" %></li>
+            <li><%= link_to "Contact" %></li>
+          </span>
+        </ul>
+      </nav>
+  	</div>
+
+    <div class="page-wrapper">
+      <%= yield %>
+    </div>
   </body>
 </html>

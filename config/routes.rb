@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  resources :work do
-  	resources :web_work
-  	resources :art_work
+  resources :works do
+  	resources :web_works
+  	resources :art_works
   end
 
   root "works#index"

@@ -1,7 +1,6 @@
-This is the works index
-
-<% @works.each do |work| %>
-	<ul>
-		<li><%= work.name %></li>
+<div class="works-index">
+	<p>What is it that you intend to see?</p>
+	<ul class="works">
+		<%= render @works %>
 	</ul>
-<% end %>
+</div>
