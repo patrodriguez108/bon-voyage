@@ -1,16 +1,16 @@
 
-<%= form_for :contact, url: '/contact', method: 'post' do |f| %>
-	<%= f.label 'I am contacting about:' %>
-	<%= f.collection_select :work_type, Work.order(:name), :id, :name %>
+<%= form_for :contact, url: '/send_contact', method: 'post' do |f| %>
+	<%= f.label 'I am contacting about:' %><br>
+	<%= f.collection_select :work_type, Work.order(:name), :id, :name %><br>
 
-	<%= f.label 'Name' %>
-	<%= f.text_field :name %>
+	<%= f.label 'Name' %><br>
+	<%= f.text_field :name %><br>
 
-	<%= f.label 'E-Mail' %>
-	<%= f.text_field :email %>
+	<%= f.label 'E-Mail' %><br>
+	<%= f.text_field :email %><br>
 
-	<%= f.label 'Message' %>
-	<%= f.text_area :message %>
+	<%= f.label 'Message' %><br>
+	<%= f.text_area :message %><br>
 
 	<%= f.submit "Send" %>
 <% end %>
