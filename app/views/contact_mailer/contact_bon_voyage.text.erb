@@ -1,0 +1,11 @@
+Hi Patrick,
+
+<%= @client[:name] %> has contacted you about your work in <%= Work.find(@client[:work_type]).name %>. They wrote the following message:
+
+"<%= @client[:message] %>"
+
+Their e-mail address is: <%= @client[:email] %>
+
+Love,
+
+Yourself
