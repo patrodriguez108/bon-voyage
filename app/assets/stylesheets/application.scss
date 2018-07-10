@@ -1,6 +1,16 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+a:link {
+  text-decoration: none;
+  color: #63819b;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #63819b;
+}
+
 body {
 	background-color: #efeeea;
 }
@@ -19,32 +29,26 @@ body {
 	padding-top: 35px;
 	padding-left: 200px;
 	padding-right: 300px;
-	list-style-type: none;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	align-items: baseline;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .nav-container #logo {
-	display: flex;
+  display: flex;
 }
 
 .nav-container .nav-links {
-	display: flex;
+  display: flex;
 }
 
-.nav-container .nav-links li {
-	margin-left: 30px;
+.navbar-nav {
+	list-style-type: none;
 }
 
-.nav-container .nav-links li a:link {
-	text-decoration: none;
-	color: #63819b;
-}
-
-.nav-container .nav-links li a:visited {
-	text-decoration: none;
-	color: #63819b;
+.navbar-nav .nav-item {
+  padding-left: 20px;
+  font-size: 120%;
 }
 
 .page-wrapper {
