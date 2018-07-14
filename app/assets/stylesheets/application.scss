@@ -11,8 +11,27 @@ a:visited {
   color: #63819b;
 }
 
+.about {
+  padding: 50px;
+  margin-left: 150px;
+}
+
 body {
 	background-color: #efeeea;
+}
+
+.contact {
+  padding: 50px;
+  text-align: center;
+}
+
+.contact-form {
+  display: inline-block;
+  text-align: left;
+}
+
+.dropdown-menu {
+  width: 20px;
 }
 
 .nav-bar {
@@ -56,6 +75,7 @@ body {
 }
 
 .works-index {
+  padding-top: 120px;
 	text-align: center;
 }
 
