@@ -10,8 +10,5 @@ Rails.application.routes.draw do
 
   get '/about', to: 'pages#about', as: 'about'
 
-  get '/contact', to: 'pages#contact', as: 'contact'
-  post '/send_contact', to: 'pages#send_contact'
-
   root 'works#index'
 end

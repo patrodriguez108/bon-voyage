@@ -1,0 +1,108 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+a:link {
+  text-decoration: none;
+  color: #63819b;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #63819b;
+}
+
+.about {
+  padding: 50px;
+  margin-left: 150px;
+}
+
+body {
+	background-color: #efeeea;
+}
+
+.contact {
+  padding: 50px;
+  text-align: center;
+}
+
+.contact-form {
+  display: inline-block;
+  text-align: left;
+}
+
+.dropdown-menu {
+  width: 20px;
+}
+
+.nav-bar {
+  background-color: #3ef9b2;
+}
+
+.nav-bar nav {
+	align-content: center;
+	padding-bottom: 5px;
+}
+
+.nav-container {
+	display: flex;
+	padding-top: 35px;
+	padding-left: 200px;
+	padding-right: 300px;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.nav-container #logo {
+  display: flex;
+}
+
+.nav-container .nav-links {
+  display: flex;
+}
+
+.navbar-nav {
+	list-style-type: none;
+}
+
+.navbar-nav .nav-item {
+  padding-left: 20px;
+  font-size: 120%;
+}
+
+.page-wrapper {
+  margin-top: 40px;
+}
+
+.works-index {
+  padding-top: 120px;
+	text-align: center;
+}
+
+.works-index .works {
+	list-style-type: none;
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+  padding-right: 90px;
+}
+
+.works-index .works li {
+	font-size: 40px;
+	display: inline-block;
+	margin-left: 50px;
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .navigation {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
