@@ -1,6 +1,7 @@
 <div class="works-index">
 	<p>What is it that you intend to see?</p>
 	<ul class="works">
-		<%= render @works %>
+    <li><%= link_to 'Web', work_web_works_path(1) %></li>
+    <li><%= link_to 'Art', work_art_works_path(2) %></li>
 	</ul>
 </div>
