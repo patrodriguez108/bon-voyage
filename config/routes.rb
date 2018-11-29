@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   get '/works/:work_id/art_works', to: 'art_works#index', as: 'work_art_works'
   get '/works/:work_id/art_works/:id', to: 'art_works#show', as: 'work_art_work'
 
+  get '/works/:work_id/art_works/:art_work_id/media', to: 'media#index'
+  get '/works/:work_id/art_works/:art_work_id/media/:id', to: 'media#show'
+
   get '/about', to: 'pages#about', as: 'about'
 
   root 'works#index'
