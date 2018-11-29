@@ -1,5 +1,5 @@
 <ul>
 <% @art_works.each do |art_work| %>
-  <li><%= art_work.name%></li>
+  <li><%= link_to art_work.name, "/works/#{art_work.work.id}/art_works/#{art_work.id}" %></li>
 <% end %>
 </ul>
