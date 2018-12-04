@@ -11,6 +11,10 @@ Rails.application.routes.draw do
   get '/works/:work_id/art_works/:art_work_id/media', to: 'media#index'
   get '/works/:work_id/art_works/:art_work_id/media/:id', to: 'media#show'
 
+  get '/works/:work_id/art_works/:art_work_id/media/:media_id/pieces', to: 'pieces#index', as: 'pieces'
+  get '/works/:work_id/art_works/:art_work_id/media/:media_id/pieces/new', to: 'pieces#new', as: 'new_piece'
+  post '/works/:work_id/art_works/:art_work_id/media/:media_id/pieces', to: 'pieces#create'
+
   get '/about', to: 'pages#about', as: 'about'
 
   root 'works#index'
