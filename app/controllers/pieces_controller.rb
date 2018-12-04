@@ -1,6 +1,7 @@
 class PiecesController < ApplicationController
 
   def index
+    @pieces = Piece.all
   end
 
   def new
@@ -9,9 +10,11 @@ class PiecesController < ApplicationController
 
   def create
     @piece = Piece.new(piece_params)
-
+    @piece.medium_id = params[:media_id]
     if @piece.save
-      p @piece
+      redirect_to pieces_path
+    else
+      p "not working"
     end
   end
 
