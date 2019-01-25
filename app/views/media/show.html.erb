@@ -1,8 +1,14 @@
-<%= link_to 'New Piece', "/works/#{@medium.art_work.work.id}/art_works/#{@medium.art_work.id}/media/#{@medium.id}/pieces/new" %>
+<div class="new-piece">
+  <%= link_to 'New Piece', "/works/#{@medium.art_work.work.id}/art_works/#{@medium.art_work.id}/media/#{@medium.id}/pieces/new" %>
+</div>
 
 <% @medium.pieces.each do |piece| %>
-  <%= image_tag piece.img.url %>
+  <div class="piece">
+    <%= image_tag piece.img.url %>
+  </div>
   <% if piece.description.present? %>
-    <%= piece.description %>
+    <div class="piece-description">
+      <%= piece.description %>
+    </div>
   <% end %>
 <% end %>
