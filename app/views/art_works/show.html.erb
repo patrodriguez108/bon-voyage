@@ -1,3 +1,7 @@
+<div class="back-button">
+  <%= link_to "Back to #{@art_work.work.name}", work_art_works_path %>
+</div>
+
 <ul>
 <% @art_work.media.each do |media| %>
   <li><%= link_to media.name, "/works/#{@art_work.work.id}/art_works/#{@art_work.id}/media/#{media.id}" %></li>

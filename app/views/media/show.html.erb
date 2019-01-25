@@ -2,6 +2,10 @@
   <%= link_to 'New Piece', "/works/#{@medium.art_work.work.id}/art_works/#{@medium.art_work.id}/media/#{@medium.id}/pieces/new" %>
 </div>
 
+<div class="back-button">
+  <%= link_to "Back to #{@medium.art_work.name}", work_art_work_path(@medium.art_work.work.id, @medium.art_work.id) %>
+</div>
+
 <% @medium.pieces.each do |piece| %>
   <div class="piece">
     <%= image_tag piece.img.url %>
