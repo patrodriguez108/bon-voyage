@@ -34,6 +34,10 @@ body {
   width: 20px;
 }
 
+img {
+  max-width: 800px;
+}
+
 .nav-bar {
   background-color: #3ef9b2;
 }
@@ -72,6 +76,17 @@ body {
 
 .page-wrapper {
   margin-top: 40px;
+}
+
+.piece {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.piece-description {
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 150px;
 }
 
 .works-index {
