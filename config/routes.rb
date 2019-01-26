@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get '/works/:work_id/art_works/:id', to: 'art_works#show', as: 'work_art_work'
 
   get '/works/:work_id/art_works/:art_work_id/media', to: 'media#index'
-  get '/works/:work_id/art_works/:art_work_id/media/:id', to: 'media#show'
+  get '/works/:work_id/art_works/:art_work_id/media/:id', to: 'media#show', as: 'medium'
 
   get '/works/:work_id/art_works/:art_work_id/media/:media_id/pieces', to: 'pieces#index', as: 'pieces'
   get '/works/:work_id/art_works/:art_work_id/media/:media_id/pieces/new', to: 'pieces#new', as: 'new_piece'
