@@ -1,6 +1,8 @@
-<div class="new-piece">
-  <%= link_to 'New Piece', "/works/#{@medium.art_work.work.id}/art_works/#{@medium.art_work.id}/media/#{@medium.id}/pieces/new" %>
-</div>
+<% if logged_in? %>
+  <div class="new-piece">
+    <%= link_to 'New Piece', "/works/#{@medium.art_work.work.id}/art_works/#{@medium.art_work.id}/media/#{@medium.id}/pieces/new" %>
+  </div>
+<% end %>
 
 <div class="back-button">
   <%= link_to "Back to #{@medium.art_work.name}", work_art_work_path(@medium.art_work.work.id, @medium.art_work.id) %>

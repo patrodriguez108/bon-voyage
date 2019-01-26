@@ -21,6 +21,9 @@
           </span>
         </li>
         <li class="nav-item"><%= link_to 'About', about_path %></li>
+        <% if logged_in? %>
+        <li class="nav-item"><%= link_to 'Logout', logout_path %></li>
+        <% end %>
       </ul>
     </div>
   </div>
