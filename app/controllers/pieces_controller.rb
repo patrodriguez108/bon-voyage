@@ -13,7 +13,7 @@ class PiecesController < ApplicationController
     @piece = Piece.new(piece_params)
     @piece.medium_id = params[:media_id]
     if @piece.save
-      redirect_to medium_path(piece.medium.art_work.work.id, piece.medium.art_work.id, piece.medium_id)
+      redirect_to medium_path(@piece.medium.art_work.work.id, @piece.medium.art_work.id, @piece.medium_id)
     else
       @errors = @piece.errors.full_messages
       render 'new'
